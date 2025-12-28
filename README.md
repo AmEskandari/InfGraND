@@ -6,7 +6,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
 </p>
 
-Official PyTorch implementation of **"InfGraND: An Influence-Guided GNN-to-MLP Knowledge Distillation"**, published in *Transactions on Machine Learning Research (TMLR)*, 2025.
+Official PyTorch implementation of **"InfGraND: An Influence-Guided GNN-to-MLP Knowledge Distillation"**, published in *Transactions on Machine Learning Research (TMLR)*, 2026.
 
 ---
 
