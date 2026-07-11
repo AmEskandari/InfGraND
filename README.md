@@ -77,12 +77,6 @@ overrides on the same configs:
 - **w/o Influence** — set `delta_2: 0` and `gamma_2: 0` in the YAML
 - **w/o Propagation** — set `propagation_hops: 0` in the YAML
 
-## Scope
-
-This release covers the six benchmark datasets of the paper's main table
-(Table 1). **OGBN-Arxiv** (paper Figure 3) is not included; it requires the
-OGB data API and an edge-dropout schedule.
-
 ## Citation
 
 ```bibtex
