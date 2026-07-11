@@ -1,0 +1,9 @@
+# Shared defaults. Leaf configs override fields via the `extends:` mechanism.
+student: MLP
+num_heads: 4
+weight_decay: 0.0005
+max_epoch: 500
+seed: 2022
+split_rate: 0.2
+num_seeds: 5
+pooling: mean

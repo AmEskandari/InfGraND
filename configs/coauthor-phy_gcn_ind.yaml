@@ -1,0 +1,23 @@
+# coauthor-phy / GCN / inductive
+# Hyperparameters as published in the paper (Appendix B, Table 6).
+extends: _base.yaml
+dataset: coauthor-phy
+teacher: GCN
+exp_setting: ind
+
+num_layers: 2
+hidden_dim: 2048
+dropout_t: 0.3
+dropout_s: 0.4
+learning_rate: 0.01
+
+# --- InfGraND core hyperparameters ---
+lamb: 0.2
+tau: 1.2
+delta_1: 0.1
+delta_2: 0.001
+gamma_1: 0.6
+gamma_2: 0.001
+
+# --- feature propagation (paper Eq. 5, 7) ---
+propagation_hops: 2

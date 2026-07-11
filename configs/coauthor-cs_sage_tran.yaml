@@ -1,0 +1,23 @@
+# coauthor-cs / SAGE / transductive
+# Hyperparameters as published in the paper (Appendix B, Table 6).
+extends: _base.yaml
+dataset: coauthor-cs
+teacher: SAGE
+exp_setting: tran
+
+num_layers: 3
+hidden_dim: 128
+dropout_t: 0.7
+dropout_s: 0.3
+learning_rate: 0.01
+
+# --- InfGraND core hyperparameters ---
+lamb: 0.5
+tau: 1.4
+delta_1: 0.5
+delta_2: 0.5
+gamma_1: 1
+gamma_2: 0.01
+
+# --- feature propagation (paper Eq. 5, 7) ---
+propagation_hops: 2

@@ -1,0 +1,23 @@
+# pubmed / SAGE / inductive
+# Hyperparameters as published in the paper (Appendix B, Table 6).
+extends: _base.yaml
+dataset: pubmed
+teacher: SAGE
+exp_setting: ind
+
+num_layers: 2
+hidden_dim: 2048
+dropout_t: 0.6
+dropout_s: 0.3
+learning_rate: 0.01
+
+# --- InfGraND core hyperparameters ---
+lamb: 0.0
+tau: 1.3
+delta_1: 0.1
+delta_2: 0.1
+gamma_1: 0.8
+gamma_2: 0.1
+
+# --- feature propagation (paper Eq. 5, 7) ---
+propagation_hops: 1

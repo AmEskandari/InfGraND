@@ -1,0 +1,23 @@
+# citeseer / GCN / transductive
+# Hyperparameters as published in the paper (Appendix B, Table 6).
+extends: _base.yaml
+dataset: citeseer
+teacher: GCN
+exp_setting: tran
+
+num_layers: 2
+hidden_dim: 256
+dropout_t: 0.5
+dropout_s: 0.5
+learning_rate: 0.01
+
+# --- InfGraND core hyperparameters ---
+lamb: 0
+tau: 1.5
+delta_1: 0.6
+delta_2: 0.1
+gamma_1: 0.6
+gamma_2: 0.4
+
+# --- feature propagation (paper Eq. 5, 7) ---
+propagation_hops: 2
