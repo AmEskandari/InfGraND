@@ -1,5 +1,5 @@
-torch>=2.0
-dgl>=1.1
-numpy>=1.21
-scipy>=1.7
-pyyaml>=6.0
+torch==1.6.0
+dgl==0.6.1
+numpy>=1.19,<2
+scipy>=1.5
+pyyaml>=5.4

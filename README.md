@@ -4,8 +4,8 @@
 [![TMLR](https://img.shields.io/badge/TMLR-2026-blue.svg)](https://openreview.net/forum?id=lfzHR3YwlD)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
-[![DGL](https://img.shields.io/badge/DGL-1.1+-orange.svg)](https://www.dgl.ai/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-1.6-ee4c2c.svg)](https://pytorch.org/)
+[![DGL](https://img.shields.io/badge/DGL-0.6.1-orange.svg)](https://www.dgl.ai/)
 
 Reference implementation for our **TMLR** paper. InfGraND distills a pretrained
 GNN teacher into an MLP student using two influence-weighted losses, where
@@ -20,12 +20,23 @@ Acknowledgement for prior work this implementation draws on.
 
 ## Installation
 
+Via conda (recommended — reproduces the tested environment):
+
 ```bash
-pip install -r requirements.txt   # PyTorch 2.0+, DGL 1.1+
+conda env create -f environment.yml
+conda activate infgrand
 pip install -e .                  # makes `python -m infgrand.train` work
 ```
 
-InfGraND targets modern DGL / PyTorch versions.
+Or via pip:
+
+```bash
+pip install -r requirements.txt
+pip install -e .
+```
+
+All results were produced with Python 3.8, PyTorch 1.6.0, and DGL 0.6.1
+(`dgl-cu111==0.6.1` on NVIDIA GPUs).
 
 ## Quick start
 
